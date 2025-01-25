@@ -6,9 +6,12 @@ class Turma:
         self.professor = professor
         self.alunos = []
 
+<<<<<<< HEAD
     def __str__(self):
         return f'{self.curso.ljust(20)} | {self.professor.ljust(20)}'
     
+=======
+>>>>>>> origin/master
     def adicionar_aluno(self, *alunos):
         self.alunos.extend(alunos)
 
@@ -21,7 +24,20 @@ class Turma:
 turma_a = Turma('Inglês', 'Teacher Anthony')
 turma_b = Turma('Tecnologia', 'Prof. Robert')
 
+<<<<<<< HEAD
 turmas = [turma_a, turma_b]
 
 turma_a.adicionar_aluno(*grupodealunos[:5])
 turma_b.adicionar_aluno(*grupodealunos[5:])
+=======
+turma_a.adicionar_aluno(*grupodealunos[:5])
+turma_b.adicionar_aluno(*grupodealunos[5:])
+
+print('Alunos Prof. Anthony:')
+turma_a.listar_alunos()
+
+print('----------------------------------------------')
+
+print('Alunos Prof. Robert:')
+turma_b.listar_alunos()
+>>>>>>> origin/master
